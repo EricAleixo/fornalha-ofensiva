@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "geometric-light";
+    src: url("../assets/fonts/urw-geometric/URWGeometricLight.otf");
+}
+
+:root {
+    --cor-fundo: #fefefe;
+    --cor-fonte: #181818;
+    --cor-principal: #D95032;
+    --cor-icones: #343434e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "geometric-light", sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    background: var(--cor-fundo);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.header div,
+nav,
+ul {
+    display: flex;
+}
+
+.logo>img {
+    width: 150px;
+}
+
+.header-links {
+    gap: 40px;
+}
+
+.header-links>li {
+    font-size: 1.27rem;
+    list-style: none;
+}
+
+.header-links .navbar-link {
+    text-decoration: none;
+    color: var(--cor-fonte);
+    position: relative;
+}
+
+.header-links .navbar-link:hover {
+    font-weight: 900;
+}
+
+.header-links>li,
+.header-icons>i {
+    cursor: pointer;
+}
+
+.header-icons {
+    color: var(--cor-icones);
+    font-weight: lighter;
+    font-size: 22px;
+    gap: 20px;
+}
+
+.header-icons>i:hover {
+    transition: all linear 0.4s;
+    transform: scale(1.07);
+    color: var(--cor-fonte);
+}
