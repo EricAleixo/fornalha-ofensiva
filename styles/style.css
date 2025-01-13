@@ -8,6 +8,8 @@
     --cor-fonte: #181818;
     --cor-principal: #D95032;
     --cor-icones: #343434e4;
+    --cor-text-button: #fff;
+    --cor-background-button: #000;
 }
 
 * {
@@ -21,8 +23,10 @@ body {
     min-height: 100dvh;
     min-width: 100dvw;
     background: var(--cor-fundo);
+    overflow-x: hidden;
 }
 
+/* Cabecalho */
 .header {
     display: flex;
     align-items: center;
@@ -75,4 +79,69 @@ ul {
     transition: all linear 0.4s;
     transform: scale(1.07);
     color: var(--cor-fonte);
+}
+/* fim do cabecalho */
+
+.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 85px;
+}
+
+.text-container-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title-main{
+    font-size: 4rem;
+    color:var(--cor-fonte);
+    font-weight: 400;
+}
+
+.special-mark{
+    color:#000;
+    font-weight: bolder;
+}
+
+.text{
+    font-size: 1.4rem;
+    color:var(--cor-fonte);
+    line-height: 35px;
+}
+
+.button{
+    font-size: 1.2rem;
+    font-weight: 100;
+    color:#fff;
+    background-color: var(--cor-background-button);
+    padding: 8px 30px;
+    border:0;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #00000050;
+}
+
+.container-img{
+    position: relative;
+}
+
+.img-main{
+    width: 630px;
+}
+
+.circle-effect{
+    position: absolute;
+    bottom: -15%;
+    right: -40%;
+    height: 80%;
+    width: 100%;
+    background-color: var(--cor-principal);
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    z-index:-10;
 }
