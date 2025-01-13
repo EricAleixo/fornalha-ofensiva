@@ -73,10 +73,10 @@ ul {
     font-weight: lighter;
     font-size: 22px;
     gap: 20px;
+    transition: all linear 0.4s;
 }
 
 .header-icons>i:hover {
-    transition: all linear 0.4s;
     transform: scale(1.07);
     color: var(--cor-fonte);
 }
@@ -124,6 +124,11 @@ ul {
     border-radius: 40px;
     cursor: pointer;
     box-shadow: 1px 1px 10px 2px #00000050;
+    transition: transform ease-in-out  .4s;
+}
+
+.button:hover{
+    transform: scale(1.1);
 }
 
 .container-img{
@@ -132,6 +137,7 @@ ul {
 
 .img-main{
     width: 630px;
+    filter: drop-shadow(2px 12px 10px rgba(0, 0, 0, 0.219));
 }
 
 .circle-effect{
