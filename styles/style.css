@@ -165,9 +165,24 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background: #DDF2BD;
     padding:15px 25px;
     border-radius: 35px;
+}
+
+.card.green{
+    background: #DDF2BD;
+}
+
+.card.rose{
+    background: #FDE1EE;
+}
+
+.card.pink{
+    background: #FEE6CC;
+}
+
+.card.yellow{
+    background: #FAFDCE;
 }
 
 .img-card{
