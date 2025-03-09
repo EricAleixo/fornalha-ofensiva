@@ -3,30 +3,531 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <!-- FLATICONS -->
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <!-- FLATICONS END -->
     <title>Fornalha ofensiva</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <img src="assets/imgs/logo/logo.webp" alt="Logo fornalha ofensiva" />
-      </div>
-      <nav>
-        <ul class="header-links">
-          <li><a class="navbar-link" href="#">Início</a></li>
-          <li><a class="navbar-link" href="#">Localização</a></li>
-          <li><a class="navbar-link" href="#">Cardápio</a></li>
-          <li><a class="navbar-link" href="#">Contato</a></li>
-        </ul>
-      </nav>
-      <div class="header-icons">
-        <i class="fi fi-rr-search"></i>
-        <i class="fi fi-rr-menu-burger"></i>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="assets/imgs/logo/logo.png" alt="Logo fornalha ofensiva" />
+        </div>
+        <nav>
+          <ul class="header-links">
+            <li><a class="navbar-link active" href="#">Início</a></li>
+            <li><a class="navbar-link" href="#">Localização</a></li>
+            <li><a class="navbar-link" href="#">Cardápio</a></li>
+            <li><a class="navbar-link" href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <i class="fi fi-rr-search"></i>
+        </div>
       </div>
     </header>
+    <main>
+      <section>
+        <div class="interface">
+          <div class="text-container-main">
+            <div>
+              <h1 class="title-main">
+                Aqui você encontrará a
+                <strong class="special-mark">melhor pizza</strong> do
+                <br /><span class="special-mark-color">mundo!</span>
+              </h1>
+            </div>
+            <div class="text">
+              Experimente o sabor irresistível da
+              <strong class="special-mark-color"
+                ><i>Fornalha Ofensiva!</i></strong
+              >
+              🍕 <br />Aqui, cada pizza é uma
+              <strong class="special-mark-color">obra-prima</strong>, feita com
+              ingredientes selecionados e assada com paixão. Perfeita para
+              compartilhar bons momentos, nossa pizzaria combina
+              <strong class="special-mark-color">tradição e inovação</strong> em
+              cada fatia. Venha descobrir por que somos a escolha número um dos
+              apaixonados por <strong class="special-mark-color">pizza!</strong>
+            </div>
+            <div>
+              <button class="button">Veja o Menu</button>
+            </div>
+          </div>
+          <div class="container-img">
+            <img
+              class="img-main"
+              src="./assets/imgs/main/pizza-main.png"
+              alt="Pizza main"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="circle-effect"></div>
+          </div>
+        </div>
+        <!-- Cards aqui -->
+        <div class="cards-container">
+          <div class="card green">
+            <div>
+              <img
+                class="img-card"
+                src="assets/imgs/main/card/pizza-pepperoni.png"
+                alt="Foto de pizza"
+              />
+            </div>
+            <div>
+              <h3>Pizza de pepperoni</h3>
+            </div>
+            <div>
+              <p><span class="special-mark">R$43,50</span></p>
+            </div>
+          </div>
+          <div class="card rose">
+            <div>
+              <img
+                style="margin: 10px 0px 17px 0"
+                class="img-card"
+                src="assets/imgs/main/card/pizza-moda-casa.png"
+                alt="Foto de pizza"
+              />
+            </div>
+            <div>
+              <h3>Pizza moda da casa</h3>
+            </div>
+            <div>
+              <p><span class="special-mark">R$35,50</span></p>
+            </div>
+          </div>
+          <div class="card yellow">
+            <div>
+              <img
+                class="img-card"
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Foto de pizza"
+              />
+            </div>
+            <div>
+              <h3>Pizza australiana</h3>
+            </div>
+            <div>
+              <p><span class="special-mark">R$ 49,99</span></p>
+            </div>
+          </div>
+          <div class="card pink">
+            <div>
+              <img
+                class="img-card"
+                src="assets/imgs/main/card/pizza-havaiana.png"
+                alt="Foto de pizza"
+              />
+            </div>
+            <div>
+              <h3>Pizza havaiana</h3>
+            </div>
+            <div>
+              <p><span class="special-mark">R$ 27,50</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="special-section">
+          <div class="overlay"></div>
+          <div class="text-container">
+            <h2>
+              Pizza do seu <br />
+              jeito, onde quiser!
+            </h2>
+            <p>Peça online, retire no local ou aproveite no restaurante.</p>
+          </div>
+          <div class="icons-container">
+            <div class="special-icons">
+              <span class="icon-container"
+                ><i class="fi fi-tr-mobile-button"></i
+              ></span>
+              <h3 class="title-icon">Entrega Online</h3>
+              <span class="status-icon">Pedir Online</span>
+            </div>
+            <div class="special-icons">
+              <span class="icon-container"
+                ><i class="fi fi-tr-box-alt"></i
+              ></span>
+              <h3 class="title-icon">Retirada Rápida</h3>
+              <span class="status-icon">Pedido para levar</span>
+            </div>
+            <div class="special-icons">
+              <span class="icon-container"
+                ><i class="fi fi-tr-pizza-slice"></i
+              ></span>
+              <h3 class="title-icon">Jantar no Restaurante</h3>
+              <span class="status-icon">Reservar uma mesa</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="title-container-promotions">
+          <h2>Ofertas Imperdíveis!</h2>
+          <button>Ver Promoções</button>
+        </div>
+
+        <div>
+          <div class="promocao-container">
+            <div class="img-container">
+              <img
+                src="assets/imgs/promocoes/pizza-promotion-main.jpg"
+                alt="Pizza especial em promoção"
+              />
+              <div class="sale">
+                <span>Desconto de 35%</span>
+              </div>
+            </div>
+            <div class="container-promocoes-details">
+              <div class="promocoes-details">
+                <div class="text-container">
+                  <span>Oferta do Dia!</span>
+                  <h2>Suprema Queijo & Bacon</h2>
+                  <p>
+                    Uma explosão de sabor com muito queijo derretido e pedaços
+                    crocantes de bacon.
+                  </p>
+                  <p class="price">R$29,90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-promocoes-container">
+            <div class="sub-promocoes">
+              <img
+                src="assets/imgs/promocoes/pizza-promotion-second.jpg"
+                alt="Pizza deliciosa em promoção"
+              />
+              <div>
+                <div class="promocoes-details">
+                  <div class="text-container">
+                    <h3>
+                      Combo Família <br />
+                      2 Pizzas
+                    </h3>
+                    <p class="price">R$49,90</p>
+                  </div>
+                </div>
+                <div class="decorator"></div>
+              </div>
+            </div>
+
+            <div class="sub-promocoes second">
+              <img
+                src="assets/imgs/promocoes/pizza-promotion-third.jpg"
+                alt="Pizza saborosa em promoção"
+              />
+              <div>
+                <div class="promocoes-details">
+                  <div class="text-container">
+                    <h3>
+                      Combo Duplo <br />
+                      2 Sabores à Escolha
+                    </h3>
+                    <p class="price">R$39,90</p>
+                  </div>
+                </div>
+                <div class="decorator">
+                  <span>Desconto de 30%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="title-location">
+          <span>Nossa Localização</span>
+          <h2>Encontre uma de nossas pizzarias perto de você</h2>
+          <p>
+            Descubra onde saborear nossas deliciosas pizzas! <br />
+            Encontre a unidade mais próxima e aproveite um atendimento especial.
+          </p>
+        </div>
+
+        <div class="address-container">
+          <div class="adrees">
+            <h4>São Paulo</h4>
+            <address>Avenida dos Sabores, 456 - Bairro Bela Vista</address>
+          </div>
+          <div class="adrees">
+            <h4>Rio de Janeiro</h4>
+            <address>Rua da Pizza, 789 - Bairro Copacabana</address>
+          </div>
+          <div class="adrees">
+            <h4>Belo Horizonte</h4>
+            <address>Praça do Queijo, 321 - Bairro Savassi</address>
+          </div>
+          <div class="adrees">
+            <h4>Curitiba</h4>
+            <address>Alameda das Massas, 987 - Bairro Batel</address>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- carrossel aqui -->
+      </section>
+      <section>
+        <div>
+          <nav class="options-cardapio">
+            <div class="link-cardapio active">
+              <div>
+                <i class="fi fi-ts-pizza-slice"></i>
+              </div>
+              <div>
+                <span class="text"> Pizza </span>
+              </div>
+            </div>
+            <div class="link-cardapio">
+              <div>
+                <i class="fi fi-ts-hamburger"></i>
+              </div>
+              <div>
+                <span class="text"> Hamburguer </span>
+              </div>
+            </div>
+            <div class="link-cardapio">
+              <div>
+                <i class="fi fi-ts-drink-alt"></i>
+              </div>
+              <div>
+                <span class="text"> Bebidas </span>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="containers-cards">
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+          <div class="card-pizza">
+            <div class="img-pizza-container">
+              <img
+                src="assets/imgs/main/card/pizza-australiana.png"
+                alt="Pizza australiana"
+              />
+            </div>
+            <div class="text">
+              <h3>Australiana</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas optio
+              </p>
+              <div class="avaliacoes">
+                <div class="stars">
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                </div>
+                <div class="cont-avaliacoes">(0)</div>
+              </div>
+            </div>
+            <div class="button-card-pizza-container">
+              <button>Compre agora</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-section">
+        <!-- contato aqui -->
+        <div class="container-contact">
+          <div class="informations-container">
+            <div class="informations">
+              <i class="fi fi-ss-marker"></i>
+              <h4>Endereço</h4>
+              <p class="sub-informations">Rua das Chamas, 666</p>
+              <p class="sub-informations">Inferno Quente, BR</p>
+            </div>
+            <div class="informations">
+              <i class="fi fi-ss-phone-call"></i>
+              <h4>Telefone</h4>
+              <p class="sub-informations">(11) 98765-4321</p>
+              <p class="sub-informations">(11) 3456-7890</p>
+            </div>
+            <div class="informations">
+              <i class="fi fi-ss-envelope"></i>
+              <h4>E-mail</h4>
+              <p class="sub-informations">contato@fornalhaofensiva.com</p>
+              <p class="sub-informations">suporte@fornalhaofensiva.com</p>
+            </div>
+          </div>
+          <div class="container-message">
+            <h2>Envie-nos sua mensagem</h2>
+            <p>Tem alguma dúvida, sugestão ou feedback? Entre em contato conosco e responderemos o mais rápido possível!</p>
+            <div class="containers-input">
+              <input class="input" type="text" placeholder="Digite seu email:">
+              <input class="input" type="text" placeholder="Digite seu nome:">
+              <textarea placeholder="Digite sua mensagem" class="input" name="message" id="message"></textarea>
+            </div>
+            <div>
+              <button class="button-message">Enviar agora</button>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </section>
+    </main>
   </body>
 </html>
