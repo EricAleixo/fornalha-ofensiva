@@ -4,7 +4,7 @@
 }
 
 :root {
-    --cor-fundo: #f4f3f3;
+    --cor-fundo: #faf7f7;
     --cor-fonte: #181818;
     --cor-principal: #D95032;
     --cor-icones: #343434e4;
@@ -17,6 +17,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "geometric-light", sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color:inherit;
 }
 
 body {
@@ -254,7 +259,6 @@ section:nth-child(2) {
 }
 
 .icon-container>i {
-    margin-top: 15px;
     font-size: 60px;
     color: var(--cor-text-button)
 }
@@ -297,6 +301,7 @@ section:nth-child(2) {
 
 .title-container-promotions button {
     border: 2px solid #D95032;
+    background-color: transparent;
     color: #D95032;
     font-weight: bolder;
     padding: 10px;
@@ -360,7 +365,6 @@ section:nth-child(2) {
     width: 100%;
     height: fit-content;
     margin: 50px 0;
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -679,6 +683,17 @@ section:nth-child(6) {
 .informations-container {
     display: grid;
     place-items: center;
+    position: relative;
+}
+
+.informations-container::before{
+    content: " ";
+    position: absolute;
+    right: 10%;
+    border-radius: 50px;
+    height: 90%;
+    width: 1px;
+    background-color: #D95032;
 }
 
 .informations {
@@ -749,7 +764,7 @@ section:nth-child(6) {
 }
 
 .button-message {
-    margin: 10px 0;
+    margin: 25px 0 5px 0;
     text-transform: capitalize;
     font-size: 20px;
     padding: 14px 24px;
@@ -764,4 +779,38 @@ section:nth-child(6) {
 
 .button-message:hover{
     transform: scale(1.05);
+}
+
+.footer{
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:15px 45px;
+}
+
+.footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .informations div{
+    text-align: center;
+    width: 250px;
+}
+
+.informations div h2{
+    color:#181818;
+    margin:10px 0;
+}
+.link-creator{
+    color:var(--cor-principal);
 }
